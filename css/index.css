@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+    .content { width: 100vw; height: 100vh;  background-color: #000;  margin-left: 0;}
+    .content .con_box { width: 100%; }
+    .content .con_box .hd{ width: 100%; }
+    .content .con_box .hd .logo { width: 300px; height: 100px; margin: 0 auto; padding-top: 30px; }
+    .content .con_box .hd .logo a { display: block; width: 100%; height: 100%; background-image: url("../logo/logo_ws.png"); text-indent: -9999px; }
+    .content .con_box .hd p.gw_fix { position:fixed; right: 0; top: 0; color:#fff; font-size: 15px;  width: 10%; height: 5%; padding: 1%; box-sizing: border-box;  }
+
+    
+
+
+@media screen and (min-width:768px) and (max-width:960px) {
+    .content { width: 100vw; height: 100vh;  background-color: #000;  margin-left: 0;}
+    .content .con_box { width: 100%; }
+    .content .con_box .hd{ width: 100%; }
+    .content .con_box .hd .logo { width: 300px; height: 100px; margin: 0 auto; padding-top: 30px; }
+    .content .con_box .hd .logo a { display: block; width: 100%; height: 100%; background-image: url("../logo/logo_ws.png"); text-indent: -9999px; }
+    .content .con_box .hd p.gw_fix { position:fixed; right: 0; top: 0; color:#fff; font-size: 15px;  width: 10%; height: 5%; padding: 1%; box-sizing: border-box;  }
+    
+
+}
+
+
+@media screen and (min-width:961px) and (max-width:1280px) { 
+    .content { width: 79vw; height: 100vh;  background-color: #000; margin-left:21vw; }
+    .content .con_box { width: 100%; }
+    .content .con_box .gnb{ width: 100%; }
+    .content .con_box .gnb p.gw_fix { position:fixed; right: 0; top: 0; color:#fff; font-size: 15px;  width: 10%; height: 5%; padding: 1%; box-sizing: border-box;  }
+
+
+}

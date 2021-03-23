@@ -1,0 +1,48 @@
+@charset "utf-8";
+.content { width: 100vw; height: 100vh; clear:both;}
+.content .join { width: 85%; margin: 0 auto;}
+.content .join .join_tit { width: 100%; height: 50px; line-height: 50px; box-sizing: border-box; margin-top: 20px; border-bottom: 1px solid #ddd;}
+
+.content section { clear: both; width: 100%; font-size: 15px; padding: 20px 0;}
+.content .join label { display: block; width: 100px; height:35px; line-height: 35px;  color: #000;}
+.content .join input { display: block; }
+
+.content .form_info { width: 100%; margin-top: 20px; }
+.content .form_info li label { float: left; clear:both; margin-right: 20px; height: 50px; }
+.content .form_info li input { width: 60%    ; height:35px;margin-top: 20px; box-sizing: border-box; padding-left: 10px ;  }
+
+.content .birth .lst { width: 100%; }
+.content .birth .lst li { width: 33.333333%; float: left; margin-top: 20px; }
+.content .birth .lst li input { width: 50%; height:35px; float: left }
+.content .birth .lst li span { display: block; width:40px; height:35px; line-height: 35px;  float: left; font-size: 18px; margin-left: 2px ; text-align: center;}
+
+.content .add .lst { width: 100%;  } 
+.content .add .lst li { clear: both; margin-bottom: 20px;}
+.content .add .lst li.it1{ margin-top: 20px; }
+.content .add .lst li input { display: block; height:35px; line-height: 35px;  float:left; margin-right: 10px;}
+.content .add .lst li button { display: block; width: 25%; height: 38px; background-color: darkgrey; border:1px solid #aaa ; border-radius: 3px; font-size: 13px; font-weight: 600; }
+
+.content .add .lst li button:hover { background-color: #000; color:#fff; }
+
+.content .add .lst li.it2 input { width: 95%; }
+
+.content .tell_box { width: 100%; margin-top: 20px; }
+.content .tell_box li { width: 25%; float: left; margin-top: 20px; }
+.content .tell_box li:nth-child(2),.content .tell_box li:last-child { width: 35%;}
+.content .tell_box li:nth-child(2)::before{content: "-"; display: block; float: left; line-height: 35px; font-size: 20px; padding-right: 10px}
+.content .tell_box li:last-child::before{ content: "-"; display: block; float: left; line-height: 35px; font-size: 20px; padding-right: 10px;}
+
+.content .tell_box .sel { width:90%; height:35px; box-sizing: border-box; padding-left: 10px; font-size: 17px; float: left;  }
+.content .tell_box  input {  width: 75%; height:33px; float: left }
+
+
+.content .ck_agree { width: 90%; clear: both; margin: 0 auto; padding-top: 40px; }
+.content .ck_agree li { float:left; }
+.content .ck_agree li input { display: block; height: 21px;  line-height: 21px; margin-right: 10px }
+
+.content .btn_box { clear:both; width: 80%; margin: 0 auto;  padding : 30px 0; padding-bottom: 60px; }
+.content .btn_box input { display: block; height: 35px; width: 40%; float: left; margin-right: 20px; background-color: darkgrey; border:1px solid #aaa ; border-radius: 3px; font-size: 15px; font-weight: 600;}
+
+.content .btn_box input:hover { background-color: #000; color:#fff; }
+
+
