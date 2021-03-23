@@ -26,8 +26,8 @@
             <!--메뉴 부분 -->
             <div class="left_fix clr">
                 <div class="lj_box">
-                    <a href="" class="login_mobile.html">로그인</a>
-                    <a href="" class="join_mobile.html">회원가입</a>
+                     <a href="login.html">로그인</a>
+                    <a href="join.html">회원가입</a>
                 </div>
                 <ul class="tnb clr">
                     <li class="lst1">
@@ -79,6 +79,7 @@
                     <li class="it1">
                         <label for="id">아이디</label>
                         <input type="text" id="id" placeholder="아이디입력" required autofocus>
+                        <button class="cf_btn">중복확인</button>
                     </li>
                     <li class="it2">
                         <label for="pw">비밀번호</label>
@@ -89,6 +90,13 @@
                         <input type="password" id="pw1" placeholder="비밀번호확인" required>
                     </li>
                 </ul>
+                <script>
+                    $(document).ready(function() {
+                        $("button.cf_btn").click(function() {
+                            $("#cf_pop").fadeIn(600);
+                        });
+                    });
+                </script>
                 <section class="birth clr">
                     <h2 class="tit">생년월일</h2>
                     <ul class="lst clr">
@@ -151,8 +159,28 @@
                 </div>
             </form>
         </div>
-         
     </div>
+    <section id="cf_pop">
+        <h2 class="tit">아이디 중복확인</h2>
+        <ul class="cf_lst">
+            <li class="it1">
+                <label for="id">아이디</label>
+                <input type="text" id="id2" placeholder="아이디입력" required autofocus>
+                <button class="cf_btn">중복확인</button>
+            </li>
+            <li class="it2">
+                 <button class="cl_btn1">확인</button>
+                 <button class="cl_btn2">닫기</button>
+            </li>
+        </ul>
+         <script>
+        $(document).ready(function(){
+           $("#cf_pop .cl_btn2").click(function(){
+              $("#cf_pop").fadeOut(600);  
+           });
+        });
+        </script>
+    </section>
 </body>
 
 </html>
