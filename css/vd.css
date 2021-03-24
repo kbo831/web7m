@@ -8,7 +8,8 @@
 .content .bread_c  .lst li a:hover{ color: #aaa;}
 .content .bread_c  .lst li:first-child a:after ,.content .bread_c  .lst li:nth-child(2) a:after{ content:">"; box-sizing: border-box; margin-left: 20px;}
 
-.content .vd { width: 85%; margin: 10px auto; }
+.content .vd { width: 85%; margin: 10px auto;  padding-bottom: 50px; }
+.content .vd .vd_box { width: 100%; height:1780px; position:relative;}
 .content .vd .tit { width: 100%; height: 50px; line-height: 50px; box-sizing: border-box;  border-bottom: 1px solid #ddd;  }
 
 .content .vd .fr_box { width: 100%;  clear:both; margin-top: 10px; }
@@ -19,12 +20,14 @@
 .content .vd .fr_box .search .sr_btn { display: block;  height:30px; width: 60px; color:#eee; background-color:darkgray; border:0; border-radius: 3px; }
 
 /*너비 306 */
-.content .vd .vd_lst { width: 100%; clear: both; padding-top: 30px; box-sizing: border-box;  }
+.content .vd .vd_lst { width: 100%; clear: both; padding-top: 30px; box-sizing: border-box;  position: absolute; top:0; left: 0; }
+
+.content .vd #vd01,.content .vd #vd02{ display: none;}
 .content .vd .vd_lst li { width: 100%;  height: 320px; margin-top: 30px; position:relative; }
 .content .vd .vd_lst li a { display: block; height: 260px; text-indent: -9999px; border-radius: 5px;}
 /* 팝업창 오토플레이로 사용*/
 .content .vd .vd_lst li .hover_vd { border-radius: 5px; position:absolute; left: 0; top: 0;  display: none; z-index: 88; }
-.content .vd .vd_lst li a:hover .hover_vd {display: block;}
+.content .vd .vd_lst li a:hover ~ .hover_vd {display: block;}
 
 .content .vd .vd_lst li.vd1 a { background-image: url(../vd/01.png);}
 .content .vd .vd_lst li.vd2 a { background-image: url(../vd/02.png);}
@@ -38,8 +41,9 @@
 .content .vd .vd_lst li.vd10 a { background-image: url(../vd/10.png);}
 
 .content .vd .vd_lst li p { height:40px; }
-.content .vd .num_tab { width: 100%; }
+.content .vd .num_tab { width: 100%; height: 35px; }
 .content .vd .num_tab .lst { width: 85%; margin: 0 auto; }
 .content .vd .num_tab .lst li a { display: block; float: left; width: 20%; line-height: 35px; height: 35px; text-align: center; color: #aaa; padding: 10px 0;  }
 .content .vd .num_tab .lst li a:hover { color: #000; }
-
+#vd01:target { display: block;}
+#vd02:target  { display: block;}

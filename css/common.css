@@ -6,8 +6,8 @@ ul { list-style-type: none; }
 a { text-decoration: none; }
 
 .wrap { width: 100vw; height: 100vh; }
-clr { clear: both; }
-clr:after { content:" "; clear:both; display: block; }
+.clr { clear: both; }
+.clr:after { content:" "; clear:both; display: block; }
 
 /* header */
 .hd { width: 100%; background-color: #000; height: 10%;  }
