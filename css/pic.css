@@ -1,5 +1,5 @@
 @charset "utf-8";
-.content { width: 100vw; height: 100vh; clear:both;}
+.content { width: 100vw; height: 100vh; clear:both; position:relative; }
 
 .content .bread_c { width: 100%; height: 50px; background-color: #eee; padding: 10px 30px; box-sizing: border-box; }
 .content .bread_c  .lst { width: 100%; clear:both; }
@@ -29,25 +29,21 @@
 .content .vd .vd_lst li { width: 100%;  height: 320px; margin-top: 30px;  }
 .content .vd .vd_lst li a { display: block; width:306px ; height: 260px; text-indent: -9999px; border-radius: 5px;}
 
-/* 팝업창 오토플레이로 사용*/
-.content .vd .vd_lst li .hover_vd { border-radius: 5px; position:absolute; left: 0; top: 0; display: none; z-index: 88; }
+/* 팝업창 오토플레이로 사용하기 */
 
 
-.content .vd .vd_lst li.vd1 a { background-image: url(../vd/01.png);}
-.content .vd .vd_lst li.vd2 a { background-image: url(../vd/02.png);}
-.content .vd .vd_lst li.vd3 a { background-image: url(../vd/03.jpg);}
-.content .vd .vd_lst li.vd4 a { background-image: url(../vd/04.png);}
-.content .vd .vd_lst li.vd5 a { background-image: url(../vd/05.png);}
-.content .vd .vd_lst li.vd6 a { background-image: url(../vd/06.png);}
-.content .vd .vd_lst li.vd7 a { background-image: url(../vd/07.png);}
-.content .vd .vd_lst li.vd8 a { background-image: url(../vd/08.png);}
-.content .vd .vd_lst li.vd9 a { background-image: url(../vd/09.jpg);}
-.content .vd .vd_lst li.vd10 a { background-image: url(../vd/10.png);}
+.content .vd .vd_lst li.vd1 a { background-image: url(../pic/01.png);}
+.content .vd .vd_lst li.vd2 a { background-image: url(../pic/02.png);}
+.content .vd .vd_lst li.vd3 a { background-image: url(../pic/03.png);}
+.content .vd .vd_lst li.vd4 a { background-image: url(../pic/04.png);}
+.content .vd .vd_lst li.vd5 a { background-image: url(../pic/05.png);}
+.content .vd .vd_lst li.vd6 a { background-image: url(../pic/06.png);}
+.content .vd .vd_lst li.vd7 a { background-image: url(../pic/07.png);}
+.content .vd .vd_lst li.vd8 a { background-image: url(../pic/08.png);}
+.content .vd .vd_lst li.vd9 a { background-image: url(../pic/09.png);}
+.content .vd .vd_lst li.vd10 a { background-image: url(../pic/10.png);}
 
 .content .vd .vd_lst li p { height:40px; }
-
-/*좌우 버튼*/
 .content  button.prev,.content  button.next{ position:fixed; top:50%; display: block; width: 26px; height:70px; margin-top: -35px; border:0; border-radius: 5px;   text-indent: -9999px; background-color: #fff;}
 .content  button.prev { left: 0; background-image: url(../icon/sub_arr_lb.png); }
 .content  button.next { right: 0; background-image: url(../icon/sub_arr_rb.png);}
-

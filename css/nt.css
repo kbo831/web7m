@@ -1,0 +1,65 @@
+@charset "utf-8";
+.content { width: 100vw; height: 100vh; clear:both; padding-bottom: 100px;}
+
+.content .bread_c { width: 100%; height: 50px; background-color: #eee; padding: 10px 30px; box-sizing: border-box; }
+.content .bread_c  .lst { width: 100%; clear:both; }
+.content .bread_c  .lst li { float: left; }
+.content .bread_c  .lst li a { display: block; line-height: 2.0; margin-right: 10px; cursor: pointer; color:#000; }
+.content .bread_c  .lst li a:hover{ color: #aaa;}
+.content .bread_c  .lst li:first-child a:after ,.content .bread_c  .lst li:nth-child(2) a:after{ content:">"; box-sizing: border-box; margin-left: 20px;}
+
+/*tb 큰영역*/
+.content .tb { width: 85%; margin: 10px auto; }
+.content .tb .tb_box { width: 100%; height:300px; overflow: hidden; margin-top: 20px; padding-top: 20px; }
+.content .tb .tb_box .wrap { width:400%; }
+
+/*브래드 영역& 검색*/
+.content .tb .tit { width: 100%; height: 50px; line-height: 50px; box-sizing: border-box;  border-bottom: 1px solid #ddd;  }
+.content .tb .tit { width: 100%; height: 50px; line-height: 50px; box-sizing: border-box;  border-bottom: 1px solid #ddd;  }
+.content .tb .fr_box { width: 100%;  clear:both; margin-top: 10px; }
+.content .tb .fr_box .sel { width: 20%; height: 30px; float: left; box-sizing:border; padding-left: 5px; margin-right: 15px; }
+.content .tb .fr_box .search { width: 100%;  }
+.content .tb .fr_box .search li { float:left;   }
+.content .tb .fr_box .search .sr_txt { height:26px; width: 160px; margin-right: 5px}
+.content .tb .fr_box .search .sr_btn { display: block;  height:30px; width: 60px; color:#eee; background-color:darkgray; border:0; border-radius: 3px; }
+
+/* 태이블 너비 306 */
+.content .tb_box .wrap .table { width: 25%; float:left; display: table; border-collapse: collapse; }
+.content  .tb_box .wrap .table tr { display: table-row;  }
+.content  .wrap .table th,.content  .tb_box .wrap .table td { display: table-cell; }
+
+
+.content .tb_box .wrap .table td.cel1 a { display: block; width: 200px; line-height: 3.0; font-size: 15px; color: #000; }
+
+.content  .tb_box .wrap .table  td.cel2 { font-size: 13px; text-align: left;}
+/*글쓰기 버튼*/
+.content .tb button.write { display: block;  position: absolute; right: 30px; bottom: 40px; width: 100px; height:30px; background-color: darkgray; border:0;  color:#fff; border-radius: 5px}
+
+/*좌우 버튼*/
+.content  button.prev,.content  button.next{ position:fixed; top:50%; display: block; width: 26px; height:70px; margin-top: -35px; border:0; border-radius: 5px;   text-indent: -9999px; background-color: #fff;}
+.content  button.prev { left: 0; background-image: url(../icon/sub_arr_lb.png); }
+.content  button.next { right: 0; background-image: url(../icon/sub_arr_rb.png);}
+
+
+/*ft*/
+.ft { width: 100vw;  height: 150px; position: fixed; bottom:0; left: 0; z-index: 80; box-sizing: border-box; padding-left:5%; color: #fff; display: none;  background-color: rgba(0,0,0);}
+.ft .tit { line-height: 2.0; font-size: 18px;}
+
+.ft p { float: left; line-height: 1.8; margin-right: 1%; font-size: 13px; }
+.ft p.add { width: 100%; }
+.ft p.add2 { float:left; width: 100%; } 
+.ft p.add3  { width: 100%; }
+.ft p.call { width: 100%; clear: both; }
+.ft p.call:before { content: ""; display: block; width: 15px; height:15px; background-image: url("../sns/tell_s.png"); float: left; margin:1.5% ;  margin-right: 10px; background-color: #fff; border-radius: 20px;}
+
+
+.ft .ft_box .sns { position:absolute;  padding: 0; right: 10%; bottom:25%; }
+.ft .ft_box .sns li { float: left; width: 30px }
+
+.ft .ft_box .sns li a { display: block; float: left; text-indent: -9999px; width: 20px; height: 20px; border-radius:35px; border: 2px solid #fff;  background-color: #fff;}
+.ft .ft_box .sns li.sns1 a { background-image: url("../sns/face_m.png"); background-color: #fff;}
+.ft .ft_box .sns li.sns1 a:hover { border-color: #3a5a9b; background-color:#3a5a9b; }
+.ft .ft_box .sns li.sns2 a { background-image: url("../sns/insta_m.png");}
+.ft .ft_box .sns li.sns2 a:hover { border-color: #86358d; background-color:#86358d; }
+.ft .ft_box .sns li.sns3 a { background-image: url("../sns/kakao_m.png");}
+.ft .ft_box .sns li.sns3 a:hover {border-color: #f8ef2c; background-color:#f8ef2c; }

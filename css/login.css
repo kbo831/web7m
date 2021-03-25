@@ -23,7 +23,7 @@
 
 .content .find { width: 100%; margin: 20px auto; }
 .content .find li { float: left;  }
-.content .find li a { display: block; text-align: center; width: 100px;  margin-left: 30px; cursor: pointer; color: darkgray; }
+.content .find li a { display: block; text-align: center; width: 100px;  margin-left: 35px; cursor: pointer; color: darkgray; }
 .content .find li a:hover { color: #000;}
 
 .content .log_box { position: absolute; bottom: 5%; left: 8%; }
