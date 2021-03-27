@@ -1,15 +1,53 @@
 @charset "utf-8";
 
-    .content { width: 100vw; height: 100vh;  background-color: #000;  margin-left: 0;}
-    .content .con_box { width: 100%; }
-    .content .con_box .hd{ width: 100%; }
-    .content .con_box .hd .logo { width: 300px; height: 100px; margin: 0 auto; padding-top: 30px; }
-    .content .con_box .hd .logo a { display: block; width: 100%; height: 100%; background-image: url("../logo/logo_ws.png"); text-indent: -9999px; }
-    .content .con_box .hd p.gw_fix { position:fixed; right: 0; top: 0; color:#fff; font-size: 15px;  width: 10%; height: 5%; padding: 1%; box-sizing: border-box;  }
+.content { width: 100vw; height: 100vh;  background-color: #fff;  margin-left: 0;}
+
+.content .con_box { width: 100%; }
+.content .con_box .hd{ width: 100%; }
+.content .con_box .hd .logo { width: 300px; height: 100px; margin: 0 auto; padding-top: 30px; }
+.content .con_box .hd .logo a { display: block; width: 100%; height: 100%; background-image: url("../logo/logo_ws.png"); text-indent: -9999px; }
+.content .con_box .hd p.gw_fix { position:fixed; right: 0; top: 0; color:#fff; font-size: 15px;  width: 10%; height: 5%; padding: 1%; box-sizing: border-box;  }
+
+
+/* 직육면체 돌리기 너비:  높이: 640 */
+.content  { width: 100vw; height:auto; background-color:#ddd; box-sizing: border-box; padding-top: 150px;}
+.content .turn_box { width: 254px; height:245px; margin: 0 45px; }
+.content .turn_box .lst { width: 100%; height:100%; position: relative;  animation-name: rec; animation-duration: 6s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; animation-direction: alternate; transform-origin:50% 50%; margin: 0 auto; transform-style: preserve-3d;  }
+/*transform-style: preserve-3d &  transform-origin:50% 50% 이거 중요*/
+
+.content .turn_box .lst li { width:100%; height: 100%; position: absolute; left: 0; top: 0; background-position: center center; background-repeat: no-repeat;background-color: rgba(0,0,0,0.2);}
+
+.content .turn_box .lst li.item1 { background-image: url("../info/rec01.png"); 
+    transform: rotateY(0deg) translate3d(0,0,-125px);} 
+
+.content .turn_box .lst li.item2 { background-image: url("../info/rec2.png"); 
+    transform: rotateY(90deg) translate3d(0,0,-125px);} 
+
+.content .turn_box .lst li.item3 { background-image: url("../info/rec3.png");  
+    transform: rotateY(180deg) translate3d(0,0,-125px);} 
+
+.content .turn_box .lst li.item4 {background-image: url("../info/rec4.png"); 
+    transform: rotateY(270deg) translate3d(0,0,-125px);} 
+
+.content .turn_box .lst li.item5{ background-image: url("../info/rec5.png"); 
+    transform: rotateX(90deg) translate3d(0,0,-125px);} 
+
+.content .turn_box .lst li.item6{ background-image: url("../info/rec6.png"); 
+    transform: rotateX(-90deg) translate3d(0,0,-125px);} 
+
+
+@keyframes rec { 
+    
+    0% { transform:rotateX(390deg) rotateY(180deg) rotateZ(0deg); }
+    100% { transform:rotateX(-30deg) rotateY(360deg) rotateZ(180deg); }  
+    
+}
+
+
 
     /*ft*/
-.ft { width: 100vw;  height: 15%; position: fixed; bottom: 0; left: 0; z-index: 80; box-sizing: border-box; padding-left:5%; color: #000; display: none; }
-.ft .tit { line-height: 2.0; font-size: 18px;}
+.ft { width: 100vw;  height: auto; position: fixed; bottom: 0; left: 0; z-index: 80; box-sizing: border-box; padding-left:5%; color: #ddd; background-color: rgba(0,0,0); }
+.ft .tit { line-height: 2.0; font-size: 18px; }
 
 .ft p { float: left; line-height: 1.8; margin-right: 1%; font-size: 13px; }
 .ft p.add { width: 100%; }
