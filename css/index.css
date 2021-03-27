@@ -10,7 +10,7 @@
 
 
 /* 직육면체 돌리기 너비:  높이: 640 */
-.content  { width: 100vw; height:auto; background-color:#ddd; box-sizing: border-box; padding-top: 150px;}
+.content  { width: 100vw; height:auto; background-color:#ddd; box-sizing: border-box; padding-top: 100px;}
 .content .turn_box { width: 254px; height:245px; margin: 0 45px; }
 .content .turn_box .lst { width: 100%; height:100%; position: relative;  animation-name: rec; animation-duration: 6s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; animation-direction: alternate; transform-origin:50% 50%; margin: 0 auto; transform-style: preserve-3d;  }
 /*transform-style: preserve-3d &  transform-origin:50% 50% 이거 중요*/
@@ -18,22 +18,22 @@
 .content .turn_box .lst li { width:100%; height: 100%; position: absolute; left: 0; top: 0; background-position: center center; background-repeat: no-repeat;background-color: rgba(0,0,0,0.2);}
 
 .content .turn_box .lst li.item1 { background-image: url("../info/rec01.png"); 
-    transform: rotateY(0deg) translate3d(0,0,-125px);} 
+    transform: rotateY(0deg) translate3d(0,0,-127px);} 
 
 .content .turn_box .lst li.item2 { background-image: url("../info/rec2.png"); 
-    transform: rotateY(90deg) translate3d(0,0,-125px);} 
+    transform: rotateY(90deg) translate3d(0,0,-127px);} 
 
 .content .turn_box .lst li.item3 { background-image: url("../info/rec3.png");  
-    transform: rotateY(180deg) translate3d(0,0,-125px);} 
+    transform: rotateY(180deg) translate3d(0,0,-127px);} 
 
 .content .turn_box .lst li.item4 {background-image: url("../info/rec4.png"); 
-    transform: rotateY(270deg) translate3d(0,0,-125px);} 
+    transform: rotateY(270deg) translate3d(0,0,-127px);} 
 
 .content .turn_box .lst li.item5{ background-image: url("../info/rec5.png"); 
-    transform: rotateX(90deg) translate3d(0,0,-125px);} 
+    transform: rotateX(90deg) translate3d(0,0,-123px);} 
 
 .content .turn_box .lst li.item6{ background-image: url("../info/rec6.png"); 
-    transform: rotateX(-90deg) translate3d(0,0,-125px);} 
+    transform: rotateX(-90deg) translate3d(0,0,-123px);} 
 
 
 @keyframes rec { 
@@ -45,29 +45,7 @@
 
 
 
-    /*ft*/
-.ft { width: 100vw;  height: auto; position: fixed; bottom: 0; left: 0; z-index: 80; box-sizing: border-box; padding-left:5%; color: #ddd; background-color: rgba(0,0,0); }
-.ft .tit { line-height: 2.0; font-size: 18px; }
-
-.ft p { float: left; line-height: 1.8; margin-right: 1%; font-size: 13px; }
-.ft p.add { width: 100%; }
-.ft p.add2 { float:left; width: 100%; } 
-.ft p.add3  { width: 100%; }
-.ft p.call { width: 100%; clear: both; }
-.ft p.call:before { content: ""; display: block; width: 15px; height:15px; background-image: url("../sns/tell_s.png"); float: left; margin:1.5% ;  margin-right: 10px; background-color: #fff; border-radius: 20px;}
-
-
-.ft .ft_box .sns { position:absolute;  padding: 0; right: 10%; bottom:25%; }
-.ft .ft_box .sns li { float: left; width: 30px }
-
-.ft .ft_box .sns li a { display: block; float: left; text-indent: -9999px; width: 20px; height: 20px; border-radius:35px; border: 2px solid #fff;  background-color: #fff;}
-.ft .ft_box .sns li.sns1 a { background-image: url("../sns/face_m.png"); background-color: #fff;}
-.ft .ft_box .sns li.sns1 a:hover { border-color: #3a5a9b; background-color:#3a5a9b; }
-.ft .ft_box .sns li.sns2 a { background-image: url("../sns/insta_m.png");}
-.ft .ft_box .sns li.sns2 a:hover { border-color: #86358d; background-color:#86358d; }
-.ft .ft_box .sns li.sns3 a { background-image: url("../sns/kakao_m.png");}
-.ft .ft_box .sns li.sns3 a:hover {border-color: #f8ef2c; background-color:#f8ef2c; }
-
+  
 
 @media screen and (min-width:768px) and (max-width:960px) {
     .content { width: 100vw; height: 100vh;  background-color: #000;  margin-left: 0;}
