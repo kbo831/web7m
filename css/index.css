@@ -11,7 +11,7 @@
 
 /* 직육면체 돌리기 너비:  높이: 640 */
 .content  { width: 100vw; height:auto; background-color:#ddd; box-sizing: border-box; padding-top: 100px;}
-.content .turn_box { width: 254px; height:245px; margin: 0 50px; }
+.content .turn_box { width: 254px; height:245px; margin: 0 auto; }
 .content .turn_box .lst { width: 100%; height:100%; position: relative;  animation-name: rec; animation-duration: 6s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; animation-direction: alternate; transform-origin:50% 50%; margin: 0 auto; transform-style: preserve-3d;  }
 /*transform-style: preserve-3d &  transform-origin:50% 50% 이거 중요*/
 
