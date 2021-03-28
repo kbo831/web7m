@@ -224,7 +224,41 @@
                    <button class="prev">이전</button>
                    <button class="next">다음</button>
                </div>
+                  <script>
+            $(document).ready(function(){
+                var cnt = $(".vd_lst").length ;
+                var wd = parseInt(306);
+                var cnt = 0; 
+                var ml = 0;
+                function nxt(x){
+                    $(".vd_box .wrap").not(":animated").animate({"margin-left":x+"px"},700);  
+                }
+                
+                $(".next").click(function(){
+                   if(cnt<2){//총 3페이지니까 0,1 두번 클릭 개수 2개
+                       cnt = cnt+1;
+                       ml = (cnt*wd)*-1;
+                       nxt(ml);
+                   }else{
+                       alert("마지막페이지입니다.")
+                   }
+               }); 
+                
+                 $(".prev").click(function(){
+                  
+                   if(cnt>0){
+                       cnt=cnt-1
+                       ml=(cnt*wd)*-1//여기는 왜 마이너스 1일까
+                        nxt(ml);
+                   }else{ 
+                       alert("첫페이지입니다.");
+                   }
+               }); 
+                
+            });
+            </script>
             </section>
+            
         </div>
         
 

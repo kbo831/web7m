@@ -237,13 +237,47 @@
                                     <td class="cel2">21.00.00</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> 
                     </div>
-                    <button class="write">글쓰기</button>
-                </div>
+                    <a href="" class="write">글쓰기</a>
+                </div> 
             </section>
+            
             <button class="prev">이전</button>
             <button class="next">다음</button>
+            <script>
+            $(document).ready(function(){
+                var cnt = $(".table").length ;
+                var wd = parseInt(306);
+                var cnt = 0; 
+                var ml = 0;
+                function nxt(x){
+                    $(".tb_box .wrap").not(":animated").animate({"margin-left":x+"px"},700);  
+                }
+                
+                $(".next").click(function(){
+                   if(cnt<2){//총 3페이지니까 0,1 두번 클릭 개수 2개
+                       cnt = cnt+1;
+                       ml = (cnt*wd)*-1;
+                       nxt(ml);
+                   }else{
+                       alert("마지막페이지입니다.")
+                   }
+               }); 
+                
+                 $(".prev").click(function(){
+                  
+                   if(cnt>0){
+                       cnt=cnt-1
+                       ml=(cnt*wd)*-1//여기는 왜 마이너스 1일까
+                        nxt(ml);
+                   }else{ 
+                       alert("첫페이지입니다.");
+                   }
+               }); 
+                
+            });
+            </script>
         </div>
         <footer class="ft">
             <div class="ft_box">
@@ -260,18 +294,6 @@
                 </ul>
             </div>
         </footer>
-        <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-               var sct = parseInt($(window).scrollTop());
-                if(sct > 20){ 
-                    $(".ft").fadeIn(500);
-                }else{
-                    $(".ft").fadeOut(500);
-                }
-            });
-        });
-        </script>
     </div>
 </body>
 
