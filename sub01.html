@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/sub01.css">
 
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/jquery_3.js"></script>
+
 </head>
 
 <body>
@@ -64,7 +65,7 @@
                     <li class="lst5">
                         <label for="r5">SNS</label>
                         <ul class="sub clr">
-                           <li><a href="www.facebook.com/profile.php?id=100063890872819">Facebook</a></li>
+                            <li><a href="www.facebook.com/profile.php?id=100063890872819">Facebook</a></li>
                             <li><a href="https://www.instagram.com/baekje_taekwondo/">Instagram</a></li>
                         </ul>
                     </li>
@@ -81,22 +82,62 @@
                 </ul>
             </div>
             <section class="info clr">
-              <h2 class="tit">인사말</h2>
-                <div class="info_box">
-                   <h2 class="tit">백재태권도</h2>
-                   <p class="com"></p>
+                <h2 class="tit">인사말</h2>
+                <div class="info_box clr">
+                    <h2 class="tit">백재태권도</h2>
+                    <p class="com">안녕하세요,<br>백제태권도 모바일홈페이지를 방문해주셔서 감사합니다.<br><br> 태권도는 한국의 대표무예이며, 태권도 수련은 아이들의 성장발달, 올바른 인격형성과 성인들의 신체,정신건강에 많은 도움이 되는 운동입니다. <br><br>백제태권도는 만인에게 항상 열려있습니다.<br> 태권도생이 되실 여러분들을 기다립니다.
+                    </p>
                 </div>
-                 <div class="info_box" id="pg1">
-                   <h2 class="tit">교육이념</h2>
-                   <p class="com"></p>
+                <div class="info_box clr" id="pg1">
+                    <h2 class="tit">교육이념</h2>
+                    <p class="com">
+                        머리에는 현명한 지혜를<br>
+                        가슴에는 따뜻한 사랑을<br>
+                        삶은 아름다운 열정으로!
+                    </p>
                 </div>
-                <div class="info_box" id="pg2">
-                   <h2 class="tit">오시는길</h2>
-                   <p class="com"></p>
+                <div class="info_box clr" id="pg2">
+                    <h2 class="tit">오시는길</h2>
+                    <div class="map_box">
+                        <!-- * 카카오맵 - 지도퍼가기 -->
+                        <!-- 1. 지도 노드 -->
+                        <div id="daumRoughmapContainer1616939787038" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%"></div>
+
+                        <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                        <!-- 3. 실행 스크립트 -->
+                        <script charset="UTF-8">
+                            new daum.roughmap.Lander({
+                                "timestamp": "1616939787038",
+                                "key": "2536z",
+                                "mapWidth": "100%",
+                                "mapHeight": "100%"
+                            }).render(); //트리거 해주면 시작할때 바로 실행
+                        </script>
+                    </div>
                 </div>
             </section>
         </div>
-        
+        <footer class="ft">
+            <div class="ft_box">
+                <h2 class="tit">백제태권도체육관</h2>
+                <p class="add">충청남도 부여군 부여읍 월함로 8</p>
+                <p class="add2">대표자 : 양노준</p>
+                <p class="add3">사업자등록번호 : 308-90-54997</p>
+                <p class="call"> 041-837-2020</p>
+                <ul class="sns clr">
+                    <li class="sns1"><a href="www.facebook.com/profile.php?id=100063890872819" class="fb">페이스북</a></li>
+                    <li class="sns2"><a href="https://www.instagram.com/baekje_taekwondo/" class="in">인스타</a></li>
+                    <li class="sns3"><a href="#" class="in">카카오</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </footer>
 
     </div>
 </body>
